@@ -4,13 +4,15 @@ class Api::V1::ProfessionalsController < ApplicationController
   # GET /professionals
   def index
     @professionals = Professional.all
-
-    render json: @professionals
+    professional_json = ProfessionalSerializer.new(@professionals).serialized_json
+    render json: professional_json
   end
 
-  # GET /professionals/1
+
   def show
-    render json: @professional
+    @professional = Professional.find(params[:id])
+    professional_json = ProfessionalSerializer.new(@professional).serialized_json
+    render json: professional_json
   end
 
   # POST /professionals
