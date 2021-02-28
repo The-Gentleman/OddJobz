@@ -4,13 +4,16 @@ class Api::V1::TasksController < ApplicationController
   # GET /tasks
   def index
     @tasks = Task.all
-
-    render json: @tasks
+    task_json = TaskSerializer.new(@tasks).serialized_json
+    render json: task_json
   end
 
   # GET /tasks/1
   def show
-    render json: @task
+    @task = Task.find(params[:id])
+    task_json = TaskSerializer.new(@task).serialized_json
+    render json: task_json
+
   end
 
   # POST /tasks
