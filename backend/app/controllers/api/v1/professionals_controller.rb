@@ -1,4 +1,4 @@
-class ProfessionalsController < ApplicationController
+class Api::V1::ProfessionalsController < ApplicationController
   before_action :set_professional, only: [:show, :update, :destroy]
 
   # GET /professionals
