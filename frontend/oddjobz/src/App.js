@@ -1,7 +1,15 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+class App extends React.Component {
+  componentDidMount(){
+    fetch('http://localhost:3000/api/v1/users')
+    .then(response => response.json())
+    .then(console.log)
+  }
+  
+  render(){
   return (
     <div className="App">
       <header className="App-header">
@@ -19,7 +27,8 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
+  };
 }
 
 export default App;
