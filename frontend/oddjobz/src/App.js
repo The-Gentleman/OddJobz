@@ -5,7 +5,7 @@ class App extends React.Component {
   
   render(){
   return(
-    "Welcome to OddJobz!"
+    <h1>Welcome to OddJobz!</h1>
   )
   };
 }

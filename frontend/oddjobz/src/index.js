@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import { createStore, applyMiddleware } from 'redux'
-import  thunk  from 'redux-thunk'
+import App from './App'
+import { applyMiddleware, createStore, compose, combineReducers } from 'redux';
+import thunk from 'redux-thunk'
 import { Provider } from 'react-redux'
 
-const users = () => {}
+const users = () => []
+
 
 const reducer = combineReducers({
   users
@@ -15,11 +15,10 @@ const reducer = combineReducers({
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(reducer, composeEnhancer(applyMiddleware(thunk)))
 
-
 ReactDOM.render(
-  <Provider store={ store }>
+  <Provider store ={ store }>
     <App />
-  </Provider>, 
+  </Provider>,
   document.getElementById('root')
 );
 
