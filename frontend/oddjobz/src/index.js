@@ -11,9 +11,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
-
-//  TO DO:
-// CREATE THE WELCOME PAGE:
-// Welcome message. Catchy motto. ---> Component 1
-// Select a task. ---> Component 2
-
