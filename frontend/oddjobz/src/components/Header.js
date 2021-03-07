@@ -4,7 +4,7 @@ function Header(){
     return (
         <div>
             <h1>Welcome to Oddjobz!</h1>
-            <h3>Where supply meets demand</h3>
+            <h3>Where demand meets supply</h3>
         </div>
     )
 }
