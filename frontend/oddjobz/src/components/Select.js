@@ -13,7 +13,6 @@ class Select extends Component {
         fetch(endPoint)
          .then(response => response.json())
          .then(tasks => {
-            
             const categories = tasks.data.map(task => {
                 return task.attributes.category
              })
@@ -33,6 +32,8 @@ class Select extends Component {
                     {this.state.categories.map(category => <option>{category}</option>)}
                 </select>
             </form>
+            <br></br>
+            <button>Find me a professional!</button>
         </div>
         )
     }
