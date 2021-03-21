@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 
 class Select extends Component {
+
     constructor(){
         super();
         this.state = {
             categories: []
         }
     }
-
+  
     componentDidMount(){
         const endPoint = 'http://localhost:3001/api/v1/tasks';
         fetch(endPoint)
@@ -22,9 +23,12 @@ class Select extends Component {
          })
          
     }
-// object property shorthand
 
-        render(){
+    handleClick() {
+        console.log("PBTHHHH")
+    }
+    
+    render(){
         return (
         <div>
             <form>
@@ -33,11 +37,12 @@ class Select extends Component {
                 </select>
             </form>
             <br></br>
-            <button>Find me a professional!</button>
+            <button onClick={this.handleClick}>Find me a professional!</button>
         </div>
         )
     }
 }
+
 
 export default Select;
 

@@ -10,7 +10,7 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* // 1 OF 5 STATELESS COMPONENTS */}
+        {/* 1 OF 5 STATELESS COMPONENTS */}
         <Header />
         <Select category={"category"} />
         <Router>
