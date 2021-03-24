@@ -44,11 +44,11 @@ Now I need a way of changing the page and displaying all the professionals that 
     end 
 
 What I need:
-1) Create action professionals. 
-2) Dispatch action to reducer
-3) Map state to props in *Select* (RENAME)
-4) Map dispatch to props in select, in component did mount
-5) Filter professionals, somewhere in there create another dropdown. 
+1) Create action professionals [X]
+2) Dispatch action to reducer []
+3) Map state to props in *Select* (RENAME) []
+4) Map dispatch to props in select, in component did mount []
+5) Filter professionals, somewhere in there create another dropdown []
 
 
 
