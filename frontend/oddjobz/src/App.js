@@ -12,7 +12,7 @@ export class App extends Component {
       <div className="App">
         {/* 1 OF 5 STATELESS COMPONENTS */}
         <Header />
-        <SelectProfessional category={"category"} />
+        <SelectProfessional category={"category"} professional={"professional"} />
         <Router>
           <Route exact path ='/header' component={Header}/>
         </Router>
