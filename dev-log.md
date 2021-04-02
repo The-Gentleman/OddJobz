@@ -47,7 +47,7 @@ What I need:
 1) Create action professionals [X]
 2) Dispatch action to reducer [X]
 3) Map state to props in *Select* (RENAME) [X]
-4) Map dispatch to props in select, in component did mount []
+4) Map dispatch to props in select, in component did mount [X]
 5) Filter professionals, somewhere in there create another dropdown []
 
 
